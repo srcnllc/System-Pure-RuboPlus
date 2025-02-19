@@ -1,0 +1,177 @@
+@import '../../../../styles/base/func';
+.formsection{
+    display: flex;
+    justify-content: space-between;
+    gap: size(30.51);
+    margin-bottom: size(160);
+    .leftContent{
+        display: flex;
+        flex-direction: column;
+        gap: size(29.97);
+        width: 50%;
+        .map{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: size(297);
+            width: 100%;
+            border-radius: size(40);
+            .text{
+                display: flex;
+                gap: size(10.87);
+                cursor: pointer;
+                h5{
+                    font-size: size(18);
+                    font-weight: 500;
+                    color: var(--white);
+                }
+                img{
+                    width: size(23.67);
+                    height: size(23.67);
+                }
+            }
+            .bg{
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .address{
+            padding: size(40);
+            display: flex;
+            gap: size(61);
+            border-radius: size(40);
+            background-color: var(--white);
+            .tr , .bae{
+                display: flex;
+                flex-direction: column;
+                gap: size(20);
+                padding-block: size(15);
+                padding-inline: size(5);
+                color: #112437;
+                width: size(273);
+                h2{
+                    font-size: size(18);
+                    font-weight: 700;
+                    line-height: size(36);
+                }
+                p{
+                    font-size: size(15);
+                    font-weight: 500;
+                    line-height: size(26);
+                    letter-spacing: -3%;
+                }
+                .contact{
+                    display: flex;
+                    flex-direction: column;
+                    gap: size(13);
+                    .number,.mail{
+                        display: flex;
+                        align-items: center;
+                        gap:size(10);
+                        img{
+                            width: size(16);
+                            height: size(16);
+                        }
+                    }
+                }
+                .button{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        gap: size(10);
+                        color: #326182;
+                        font-size: size(14);
+                        line-height: size(16.94);
+                        font-weight: 500;
+                        img{
+                            width: size(12);
+                            height: size(12);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightContent{
+        flex: 1;
+        background-color: #112437;
+        border-radius: size(40);
+        padding: size(59.8) size(45.76);
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap:size(14.67);
+            label{
+                font-size: size(16);
+                font-weight: 400;
+                line-height: size(20.88);
+                color: var(--green3);
+            }
+            input,textarea{
+                width: 100%;
+                border-radius: size(12);
+                padding: size(20) size(24);
+                background-color: var(--green1);
+                color: var(--green2);
+                font-size: size(15);
+                line-height: size(19.58);
+                font-weight: 400;
+                outline: none;
+                border: none;
+            }
+            .nameSurname , .konu , .desc{
+                display: flex;
+                flex-direction: column;
+            }
+            .numberAndEmail{
+                display: flex;
+                gap: size(18.75);
+            }
+            button{
+                width: 100%;
+                border-radius: size(12);
+                padding: size(20) size(24);
+                background-color: var(--green1);
+                color: var(--green2);
+                font-size: size(18);
+                line-height: size(21.78);
+                font-weight: 600;
+                outline: none;
+                border: none;
+                color:#112437;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: size(5);
+                cursor: pointer;
+                img{
+                    width: size(24);
+                    height: size(24);
+                    &.iconHover{
+                        display: none;
+                    }
+                }
+                &:hover{
+                    background-color: #095A47;
+                    color: var(--white);
+                    img{
+                        &.iconHover{
+                            display: inline;
+                        }
+                        &.iconDefault{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

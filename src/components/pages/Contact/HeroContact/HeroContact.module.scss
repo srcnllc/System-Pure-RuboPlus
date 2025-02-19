@@ -1,0 +1,42 @@
+@import '../../../../styles/base/func';
+.herocontact{
+    padding: size(104) size(0)size(56) size(128); 
+    .content{
+        display: flex;
+        align-items: flex-end;
+        gap: size(22);
+        .title{
+            width: size(578);
+            h2{
+                font-size: size(46);
+                font-weight: 300;
+                line-height: size(64);
+                color: var(--darkBlue);
+                text-transform: capitalize;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+        .desc{
+            width: size(500);
+            display: flex;
+            flex-direction: column;
+            gap: size(18);
+            padding-bottom: size(13);
+            p{
+                font-size: size(18);
+                font-weight: 500;
+                line-height: size(27);
+                color: var(--black);
+            }
+            span{
+                font-size: size(18);
+                font-weight: 400;
+                line-height: size(27);
+                color: var(--contactText);
+            }
+        }
+    }
+ 
+}

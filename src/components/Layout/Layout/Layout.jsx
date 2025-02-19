@@ -1,14 +1,13 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import { useLocation } from 'react-router-dom';
-
 export default function Layout({ children }) {
-  const path = window.location.pathname; // Sayfa yolunu burada alabilirsiniz
-  const isHomePage = path === '/'; // Ana sayfa kontrolü
+  const path = window.location.pathname;
+  const isTransparentPage = path === '/' || path === '/about'; 
+  const isRelativePage = path === '/prices' || path === '/contact';
   return (
     <>
-      <Header transparent={isHomePage}/>
+      <Header transparent={isTransparentPage} relativePage={isRelativePage}/>
       <main>{children}</main>
       <Footer />
     </>

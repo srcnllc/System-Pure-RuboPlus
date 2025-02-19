@@ -2,7 +2,7 @@ import Container from '../../Tools/Container/Container';
 import styles from './Header.module.scss';
 import React, { useEffect, useState } from 'react';
 
-export default function Header({transparent }) {
+export default function Header({transparent,relativePage}) {
   const [active, setActive] = useState("");
   const navList = [
     {
@@ -28,7 +28,7 @@ export default function Header({transparent }) {
 
   return (
     <>
-    <header className={`${styles.header} ${transparent ? styles['header-transparent'] : ''}`}>
+    <header className={`${styles.header} ${transparent ? styles['header-transparent'] : ''} ${relativePage ? styles['header-relative'] : ''}`}>
     <Container large>
           <div className={styles.topbar}>
             <div className={styles.logo}>
