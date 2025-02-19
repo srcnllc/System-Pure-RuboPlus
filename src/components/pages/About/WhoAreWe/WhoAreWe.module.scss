@@ -1,0 +1,22 @@
+@import '../../../../styles/base/func';
+.whoarewe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: size(48);
+    padding: size(83) size(218);
+    h2{
+        font-size: size(48);
+        font-weight: 700;
+        line-height: size(59.42);
+        color: var(--dark);
+    }
+    p{
+        font-size: size(21);
+        line-height: size(31);
+        font-weight: 400;
+        color: var(--dark);
+    }
+ 
+}

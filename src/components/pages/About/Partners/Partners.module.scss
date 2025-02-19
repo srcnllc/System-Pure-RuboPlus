@@ -1,0 +1,40 @@
+@import '../../../../styles/base/func';
+.partners{
+    padding: size(31) size(48);
+    border-radius: size(26);
+    background: linear-gradient(to right,#ED417F,#E93BE3);
+    .content{
+        display: flex;
+        justify-content: space-between;
+        padding-block: size(40);
+        .desc{
+            display: flex;
+            flex-direction: column;
+            width: size(498);
+            gap: size(25);
+            h3{
+                font-size: size(49);
+                font-weight: 700;
+                line-height: size(56);
+                color: var(--white);
+            }
+            p{
+                font-size: size(22);
+                font-weight: 700;
+                color: var(--white);
+            }
+        }
+        .partnersList{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            .partner{
+                width: size(270);
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

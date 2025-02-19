@@ -1,0 +1,43 @@
+@import '../../../../styles/base/func';
+.imagebanner{
+    display: flex;
+    gap: size(7.94);
+    margin-bottom: size(86);
+    .leftBanner{
+        display: flex;
+        flex-direction: column;
+        gap: size(7.94);
+        width: 50%;
+        overflow: hidden;
+        .topImages{
+            display: flex;
+            gap: size(7.94);
+            img{
+                width: 100%;
+            }
+        }
+        .bottomImages{
+            width: 100%;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    .rightBanner{
+        display: flex;
+        width: 50%;
+        gap: size(7.94);
+        overflow: hidden;
+        .OneImages{
+            width: size(100%);
+            img{
+                height: 100%;
+            }
+        }
+        .TwoImages{
+            display: flex;
+            flex-direction: column;
+            gap: size(7.94);
+        }
+    }
+}

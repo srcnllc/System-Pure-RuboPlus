@@ -1,0 +1,86 @@
+@import '../../../../styles/base/func';
+.maps{
+ margin-top: size(133);
+ margin-bottom: size(111);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: size(48);
+ h2{
+    font-size: size(48);
+    font-weight: 700;
+    line-height: size(59.42);
+    color: var(--dark);
+ }
+ .mapsCard{
+    background-color: var(--white);
+    border-radius: size(26);
+    border: size(2) solid var(--white);
+    display: flex;
+    gap:size(16);
+    width: 100%;
+
+    .cardItem{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        .image{
+            position: relative;
+            height: size(422);
+            border-radius: size(26);
+            overflow: hidden;
+            width: 100%;
+            iframe{
+                width: 100%;
+            }
+            .location{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-75%);
+            }
+
+        }
+        .info{
+            padding: size(15.85) size(16);
+            display: flex;
+            align-items: center;
+            gap: size(20);
+            .title{
+                display: flex;
+                flex-direction: column;
+                gap: size(11.29);
+                max-width: size(270);
+                height: size(125);
+                h5{
+                    font-size: size(18);
+                    font-weight: 700;
+                    line-height: size(36);
+                    color: var(--dark);
+                }
+                p{
+                    font-size: size(15);
+                    font-weight: 500;
+                    line-height: size(26);
+                    color: var(--dark);
+                }
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+                gap: size(13);
+                .number,.mail{
+                    display: flex;
+                    align-items: center;
+                    gap:size(10);
+                    img{
+                        width: size(16);
+                        height: size(16);
+                    }
+                }
+            }
+        }
+    }
+ }
+}
