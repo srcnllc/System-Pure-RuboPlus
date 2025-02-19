@@ -1,0 +1,46 @@
+@import '../../../styles/base/func';
+.programcard{
+    width: size(480);
+    height: size(738);
+    position: relative;
+    padding: size(0) size(60) size(44) size(60);
+    display: flex;
+    align-items: flex-end;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: size(48);
+        h2{
+            font-size: size(46);
+            font-weight: 700;
+            line-height: size(48);
+            color: var(--white);
+        }
+        .transparent{
+            width: max-content;
+            background-color: transparent;
+            border: 1px solid var(--white);
+            border-radius:size(999);
+        }
+        .buttons{
+            display: flex;
+            gap: size(10);
+            .currentButton{
+                color: var(--pink);
+                border-radius: size(12);
+                font-weight: 800;
+                width: 100%;
+                padding-inline:0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .bacground{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+ 
+}

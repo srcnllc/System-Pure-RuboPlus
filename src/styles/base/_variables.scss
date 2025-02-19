@@ -1,0 +1,6 @@
+:root {
+  --1: min(0.069vw, 1px);
+  @media only screen and (max-width: 991.98px) {
+    --1: min(0.23vw);
+  }
+}

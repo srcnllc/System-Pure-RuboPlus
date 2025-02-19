@@ -1,0 +1,45 @@
+@import '../../../styles/base/func';
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: size(37) size(16);
+    background-color: black;
+    z-index: 99999;
+    .topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      img{
+        height: size(55);
+      }
+    }
+    nav{
+      .navItems{
+        display: flex;
+        gap: size(24);
+        color:var(--white);
+        font-weight: 700;
+        font-size: size(16);
+        line-height: size(19.81);
+        letter-spacing: 1%;
+        .active{
+            color: var(--active);
+        }
+      }
+    }
+    .buttons{
+      display: flex;
+      gap:size(8)
+    }
+  }
+  &.header-transparent {
+    background-color: transparent; /* Home sayfasında */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+

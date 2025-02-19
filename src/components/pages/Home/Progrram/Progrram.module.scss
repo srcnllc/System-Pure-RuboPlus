@@ -1,0 +1,32 @@
+@import '../../../../styles/base/func';
+.progrram{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+ width: 100%;
+ margin-bottom: size(180);
+ .questionBox{
+    width: max-content;
+    padding: size(47) size(126);
+    border-radius: size(22);
+    background-color: var(--white);
+    position: relative;
+    bottom:size(-76);
+    h2{
+        font-size: size(48.16);
+        font-weight: 700;
+        line-height: size(59.62);
+        color: var(--dark);
+        span{
+            background: linear-gradient(90deg, #ED417F, #6A5BFF, #08A3DA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+ }
+ .prgCard{
+    display: flex;
+ }
+}

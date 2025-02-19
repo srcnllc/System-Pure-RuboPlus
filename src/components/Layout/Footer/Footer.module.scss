@@ -1,0 +1,37 @@
+@import '../../../styles/base/func';
+.footer{
+    background-color: var(--footerBg);
+    .footertContent{
+        padding: size(58) size(0) size(35) size(86);
+        .logo{
+            img{
+              height: size(55);
+            }
+          }
+          .nav{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: size(227);
+            color: var(--white);
+            display: flex;
+            gap: size(67);
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: size(16);
+                font-size: size(16);
+                line-height: size(27.8);
+                font-weight:600;
+                color: var(--footerGray);
+                li{
+                    cursor: pointer;
+                }
+            }
+          }
+          .bankCard{
+            display: flex;
+            align-items: center;
+            gap: size(64);
+          }
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../styles/base/func';
+.homePage{
+  .homeContent{
+    display: flex;
+    flex-direction: column;
+    gap: size(150);
+  }
+}

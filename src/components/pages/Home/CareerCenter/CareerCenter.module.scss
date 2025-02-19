@@ -1,0 +1,127 @@
+@import '../../../../styles/base/func';
+.careercenter{
+    .content{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        .top{
+            display: flex;
+            .info{
+                width: 50%;
+                padding: size(95) size(90);
+                .infoContent{
+                    display: flex;
+                    flex-direction: column;
+                    gap: size(29);
+                    max-width: size(539);
+                    h2{
+                        font-size: size(59);
+                        font-weight: 700;
+                        line-height: size(73.04);
+                        color: var(--black);
+                    }
+                    p{
+                        font-size: size(24);
+                        font-weight: 600;
+                        line-height: size(32);
+                        color: var(--black);
+                    }
+                    button{
+                        width: max-content;
+                    }
+                    .iconTitle{
+                        display: flex;
+                        align-items: center;
+                        gap: size(8);
+                        img{
+                            width: size(25);
+                            height: size(25);
+                        }
+                        span{
+                            text-transform: uppercase;
+                            font-size: size(15);
+                            font-weight: 700;
+                            line-height: size(18.57);
+                            color: var(--pink);
+                        }
+                    }
+                }
+            }
+            .image{
+                width: 50%;
+                height: size(720);
+                img{
+                    width: auto;
+                    height: 100%
+                }
+        }
+        }
+        .bottom{
+            display: flex;
+            .info{
+                width: 50%;
+                padding: size(56) size(91);
+
+                .infoContent{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    .title{
+                        display: flex;
+                        flex-direction: column;
+                        gap: size(20);
+                    h2{
+                        font-size: size(59);
+                        font-weight: 700;
+                        line-height: size(73.04);
+                        color: var(--black);
+                        span{
+                            color: var(--green1);
+                        }
+                    }
+                    p{
+                        font-size: size(24);
+                        font-weight: 700;
+                        line-height: size(32);
+                        color: var(--black);
+                        span{
+                            color: var(--pink);
+                            font-weight: 600;
+                        }
+                    }
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: size(44);
+                        li{
+                            display: flex;
+                            align-items: center;
+                            gap: size(34);
+                            h4{
+                                font-size: size(28);
+                                font-weight:700;
+                                line-height:size(35);
+                                color: var(--black);
+                            }
+                            img{
+                                width: size(75);
+                                height: size(75);
+                            }
+                        }
+                    }
+                }
+            }
+            .image{
+                width: 50%;
+                height: size(720);
+                img{
+                    width: auto;
+                    height: 100%
+                }
+        }
+        }
+    }
+ 
+}
