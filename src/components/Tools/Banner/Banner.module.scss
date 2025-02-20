@@ -10,16 +10,108 @@
     background-color: var(--pink);
     width: 100%;
     border-radius: size(26);
+    @media #{max-width()} {
+        padding: size(20) size(20);
+    }
     .content{
         width: 100%;
         display: flex;
         justify-content: space-between;
-
-        .leftContent{
-            width: size(335);
+        align-items: center;
+        @media #{max-width()} {
+            flex-direction: column;
+            gap: size(25);
         }
+        .leftContent{
+            width: size(350);
+            @media #{max-width()} {
+                width: 100%;
+            }
+            h2{
+                font-size: size(49);
+                font-weight: 700;
+                line-height: size(56);
+                color: var(--white);
+            }
+            }
         .rightContent{
-            width: size(398);
+            display: flex;
+            flex-direction: column;
+            gap: size(15);
+            .price{
+                h3{
+                    font-size: size(33.92);
+                    font-weight: 700;
+                    line-height: size(38.77);
+                    color: var(--white);
+                    @media #{max-width()} {
+                        font-size: size(24);
+                        font-weight: 700;
+                        line-height: size(32);
+                    }
+                }
+            }
+            p{
+                width: size(385);
+                font-size: size(24);
+                font-weight: 700;
+                line-height: size(30);
+                color: var(--white);
+                @media #{max-width()} {
+                    width: 100%;
+                }
+            }
+        }
+    }
+ }
+ .greenBanner{
+    display: flex;
+    padding: size(32) size(48);
+    background-color: var(--green1);
+    width: 100%;
+    border-radius: size(26);
+    @media #{max-width()} {
+        padding: size(20) size(20);
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{max-width()} {
+            flex-direction: column;
+            gap: size(25);
+        }
+        .leftContent{
+            width: size(350);
+            @media #{max-width()} {
+                width: 100%;
+            }
+            h2{
+                font-size: size(42);
+                font-weight: 700;
+                line-height: size(48);
+                color: var(--white);
+            }
+            }
+        .rightContent{
+            display: flex;
+            flex-direction: column;
+            gap: size(28);
+            p{
+                width: size(398);
+                font-size: size(20);
+                font-weight: 500;
+                line-height: size(27.8);
+                color: var(--white);
+                @media #{max-width()} {
+                    width: 100%;
+                }
+                span{
+                    font-size: size(21.92);
+                    font-weight: 700;
+                }
+            }
         }
     }
  }

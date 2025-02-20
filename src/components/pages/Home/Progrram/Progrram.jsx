@@ -1,30 +1,9 @@
 import ProgramCard from '../../../Tools/ProgramCard/ProgramCard';
 import styles from './Progrram.module.scss';
+import ProgramList from '../../../../jsonData/homeProgramList.json'
 
 export default function Progrram() {
-  const ProgramList = [
-    {
-      buttonName: 'TÜM GÜN',
-      title:"İş bulmak, meslek sahibi olmak istiyorum.",
-      btn1:"Frontend, 3 AY",
-      btn2:"Fullstack Pro, 6 AY",
-      bgImage: './images/bg1.png',
-    },
-    {
-      buttonName: 'AKŞAMLARI VE HAFTASONU',
-      title:"İş değiştirmek veya işimde yükselmek istiyorum.",
-      btn1:"Fullstack Up",
-      btn2:"Fullstack UpPro",
-      bgImage: './images/bg2.png',
-    },
-    {
-      buttonName: 'AKŞAMLARI VE HAFTASONU',
-      title:"Okurken geleceğe hazırlanmak istiyorum.",
-      btn1:"Fullstack Genç",
-      btn2:"Fullstack GPro",
-      bgImage: './images/bg3.png',
-    }
-  ];
+
   return (
 <section className={styles.progrram}>
   <div className={styles.questionBox}>

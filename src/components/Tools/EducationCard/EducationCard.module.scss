@@ -9,6 +9,9 @@
     flex-direction: column;
     justify-content: space-between;
     gap: size(10);
+    @media #{max-width()} {
+        width: 100%;
+      }
     h3{
         font-size: size(24);
         font-weight: 700;

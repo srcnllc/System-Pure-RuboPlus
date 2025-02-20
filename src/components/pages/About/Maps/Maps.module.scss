@@ -7,6 +7,10 @@
  justify-content: center;
  align-items: center;
  gap: size(48);
+ @media #{max-width()} {
+    margin-top: size(55);
+    margin-bottom: size(55);
+}
  h2{
     font-size: size(48);
     font-weight: 700;
@@ -20,17 +24,26 @@
     display: flex;
     gap:size(16);
     width: 100%;
+    @media #{max-width()} {
+        flex-direction: column;
+    }
 
     .cardItem{
         display: flex;
         flex-direction: column;
         width: 50%;
+        @media #{max-width()} {
+            width: 100%;
+        }
         .image{
             position: relative;
             height: size(422);
             border-radius: size(26);
             overflow: hidden;
             width: 100%;
+            @media #{max-width()} {
+                height: size(422*(2/3));
+            }
             iframe{
                 width: 100%;
             }
@@ -47,12 +60,19 @@
             display: flex;
             align-items: center;
             gap: size(20);
+            @media #{max-width()} {
+                flex-direction: column;
+                align-items: flex-start;
+            }
             .title{
                 display: flex;
                 flex-direction: column;
                 gap: size(11.29);
                 max-width: size(270);
                 height: size(125);
+                @media #{max-width()} {
+                    height: auto;
+                }
                 h5{
                     font-size: size(18);
                     font-weight: 700;

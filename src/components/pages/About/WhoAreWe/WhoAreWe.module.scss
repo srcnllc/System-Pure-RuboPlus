@@ -6,6 +6,9 @@
     align-items: center;
     gap: size(48);
     padding: size(83) size(218);
+    @media #{max-width()} {
+        padding: size(40) size(0);
+    }
     h2{
         font-size: size(48);
         font-weight: 700;

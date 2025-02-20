@@ -8,6 +8,11 @@
   align-items: center;
   justify-content: flex-end;
   padding-bottom: size(295);
+  @media #{max-width()} {
+    min-height:100vh;
+    padding-bottom: size(30);
+    overflow: hidden;
+}
     .textContent{
       display: flex;
       flex-direction: column;
@@ -16,6 +21,9 @@
       align-items: center;
       padding-inline: size(168);
       gap: size(24);
+      @media #{max-width()} {
+        padding-inline: size(0);
+      }
       h2{
         display: flex;
         flex-direction: column;
@@ -23,6 +31,10 @@
         font-size: size(74);
         font-weight: 500;
         line-height: size(74.2);
+        @media #{max-width()} {
+          font-size: size(42);
+          line-height: size(52);
+      }
         span{
             font-weight: 700;
         }
@@ -55,6 +67,9 @@
     img{
       width: auto;
       height: size(1098);
+      @media #{max-width()} {
+        height:100vh;
+    }
     }
   }
 

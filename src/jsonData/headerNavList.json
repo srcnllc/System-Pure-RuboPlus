@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Programlar",
+    "slug": "/"
+  },
+  {
+    "title": "Fiyatlar",
+    "slug": "/prices"
+  },
+  {
+    "title": "Hakkımızda",
+    "slug": "/about"
+  },
+  {
+    "title": "İletişim",
+    "slug": "/contact"
+  }
+]

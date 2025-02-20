@@ -1,48 +1,11 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import Container from '../../Tools/Container/Container';
+import bankCardList from '../../../jsonData/bankCardList.json'
+import footerNav from '../../../jsonData/footerNav.json'
 
 export default function Footer() {
 
-  const bankCardList = [
-    {
-      title: 'mastercard',
-      image: '/images/mastercard.png',
-    },
-    {
-      title: 'visa',
-      image: '/images/visa.png',
-    },
-    {
-      title: 'american_express',
-      image: '/images/american_express.png',
-    },
-  ];
-  const footerNav = [
-    {
-      title: "Kurumsal",
-      links: ["Hakkımızda", "Medya", "İşverenler", "İletişim"],
-    },
-    {
-      title: "Hizmetler",
-      links: [
-        "Fullstack Pro",
-        "Fullstack Up",
-        "Fullstack UpPro",
-        "Frontend Developer",
-        "Fullstack Genç",
-        "Fullstack GPro",
-      ],
-    },
-    {
-      title: "Yasal",
-      links: ["KVKK Politikası", "Gizlilik Politikası", "Instagram", "Linkedin"],
-    },
-    {
-      title: "Destek",
-      links: ["Sıkça Sorulanlar", "Kullanım Şartları"],
-    },
-  ];
   return (
     <div className={styles.footer}>
       <Container large>

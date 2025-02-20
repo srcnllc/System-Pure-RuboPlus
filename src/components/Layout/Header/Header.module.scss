@@ -27,6 +27,9 @@
         .active{
             color: var(--active);
         }
+        @media #{max-width()} {
+          flex-direction: column;
+        }
       }
     }
     .buttons{
@@ -43,6 +46,50 @@
   }
   &.header-relative {
     position: relative;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+    span {
+      background-color: var(--white);
+      width: 100%;
+      height: 2px;
+      display: flex;
+      margin-left: auto;
+      transition: all 500ms ease;
+      &:nth-child(1) {
+      }
+      &:nth-child(2) {
+        width: 50%;
+        transform-origin: left;
+      }
+      &:nth-child(3) {
+        width: 80%;
+      }
+    }
+    &.menuActive {
+      span {
+        background-color: var(--white);
+        width: 100%;
+        height: 2px;
+        display: flex;
+        margin-left: auto;
+        &:nth-child(1) {
+          transform: translateY(10px) rotate(135deg);
+        }
+        &:nth-child(2) {
+          width: 50%;
+          transform: scaleX(0);
+        }
+        &:nth-child(3) {
+          width: 100%;
+          transform: translateY(-7px) rotate(-135deg);
+        }
+      }
+    }
   }
 }
 

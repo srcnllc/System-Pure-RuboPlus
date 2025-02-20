@@ -1,27 +1,11 @@
 import Container from '../../Tools/Container/Container';
 import styles from './Header.module.scss';
 import React, { useEffect, useState } from 'react';
+import navList from '../../../jsonData/headerNavList.json'
 
 export default function Header({transparent,relativePage}) {
   const [active, setActive] = useState("");
-  const navList = [
-    {
-      title: 'Programlar',
-      slug: '/',
-    },
-    {
-      title: 'Fiyatlar',
-      slug: '/prices',
-    },
-    {
-      title: 'Hakkımızda',
-      slug: '/about',
-    },
-    {
-      title: 'İletişim',
-      slug: '/contact',
-    },
-  ];
+  const [menuActive, setMenuActive] = useState(false);
   useEffect(() => {
     setActive(window.location.pathname);
   }, []);
@@ -42,17 +26,22 @@ export default function Header({transparent,relativePage}) {
                   </li>
                 ))}
               </ul>
-              {/* <div className={styles.hamburger} onClick={() => setActive(!active)}>
-                <span className={active? styles.line1 : styles.line1Active}></span>
-                <span className={active? styles.line2 : styles.line2Active}></span>
-                <span className={active? styles.line3 : styles.line3Active}></span>
-              </div> */}
             </nav>
             <div className={styles.buttons}>
               <button className='btn grayButton'>GİRİŞ</button>
               <button className='btn pinkButton'>BAŞVUR</button>
             </div>
+            <div
+              onClick={() => setMenuActive(!menuActive)}
+              className={`${styles.hamburger} ${
+                menuActive ? styles.menuActive : ''
+              } d-sm`}>
+              <span />
+              <span />
+              <span />
             </div>
+            </div>
+
         </Container>
       </header>
     </>

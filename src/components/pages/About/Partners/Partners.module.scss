@@ -3,20 +3,34 @@
     padding: size(31) size(48);
     border-radius: size(26);
     background: linear-gradient(to right,#ED417F,#E93BE3);
+    @media #{max-width()} {
+        padding: size(20) size(28);
+    }
     .content{
         display: flex;
         justify-content: space-between;
         padding-block: size(40);
+        @media #{max-width()} {
+            flex-direction: column;
+            padding-block: size(20);
+            gap: size(25);
+        }
         .desc{
             display: flex;
             flex-direction: column;
             width: size(498);
             gap: size(25);
+            @media #{max-width()} {
+                width: 100%;
+            }
             h3{
                 font-size: size(49);
                 font-weight: 700;
                 line-height: size(56);
                 color: var(--white);
+                @media #{max-width()} {
+                    font-size: size(38);
+                }
             }
             p{
                 font-size: size(22);
@@ -30,10 +44,17 @@
             justify-content: space-between;
             align-items: center;
             flex: 1;
+                  @media #{max-width()} {
+                    gap: size(20);
+                }
             .partner{
                 width: size(270);
                 display: flex;
                 justify-content: center;
+                @media #{max-width()} {
+                    width: 100%;
+                }
+    
             }
         }
     }

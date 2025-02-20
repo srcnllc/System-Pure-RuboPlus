@@ -1,12 +1,23 @@
 @import '../../../../styles/base/func';
 .herocontact{
     padding: size(104) size(0)size(56) size(128); 
+    @media #{max-width()} {
+        padding: size(30) size(0) size(30) size(0);
+    }
     .content{
         display: flex;
         align-items: flex-end;
         gap: size(22);
+        @media #{max-width()} {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .title{
             width: size(578);
+            @media #{max-width()} {
+                width: 100%;
+            }
             h2{
                 font-size: size(46);
                 font-weight: 300;
@@ -16,6 +27,11 @@
                 span{
                     font-weight: 700;
                 }
+                @media #{max-width()} {
+                    font-size: size(23);
+                    font-weight: 300;
+                    line-height: size(32);
+                }
             }
         }
         .desc{
@@ -24,6 +40,9 @@
             flex-direction: column;
             gap: size(18);
             padding-bottom: size(13);
+            @media #{max-width()} {
+                width: 100%;
+            }
             p{
                 font-size: size(18);
                 font-weight: 500;

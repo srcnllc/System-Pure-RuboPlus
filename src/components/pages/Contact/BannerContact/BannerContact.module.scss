@@ -6,6 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media #{max-width()} {
+        margin-bottom: size(24);
+    }
     img{
         width: 100%;
         height: auto;
@@ -20,7 +23,11 @@
         align-items: center;
         position: relative;
         bottom: size(-55);
-
+        @media #{max-width()} {
+            width: size(105*(2/3));
+            height: size(103*(2/3));
+            bottom: size(-35);
+        }
         img{
             width: size(15.92);
             height: size(22.39);

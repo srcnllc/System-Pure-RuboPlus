@@ -1,32 +1,8 @@
 import styles from './Partners.module.scss';
+import partnerList from '../../../../jsonData/partnerList.json'
 
 export default function Partners() {
-  const partnerList = [
-    {
-      title: 'Turkish_Airlines',
-      image: '/images/Turkish_Airlines.png',
-    },
-    {
-      title: 'Akbank',
-      image: '/images/Akbank.png',
-    },
-    {
-      title: 'Sabancı',
-      image: '/images/Sabancı.png',
-    },
-    {
-      title: 'YapiKredi',
-      image: '/images/yapiKredi.png',
-    },
-    {
-      title: 'Denizbank',
-      image: '/images/denizbank.png',
-    },
-    {
-      title: 'Koc',
-      image: '/images/koc.png',
-    }
-  ];
+
   return (
 <section className={styles.partners}>
   <div className={styles.content}>

@@ -13,7 +13,11 @@ export default function ProgramInfoCard(
     installment,
     amount,
     description,
-    color
+    color,
+    messageIcon1,
+    messageIcon2,
+    messageIcon3,
+    messageIcon4
   }) {
   return (
 <section className={styles.programinfocard}>
@@ -23,21 +27,21 @@ export default function ProgramInfoCard(
   </div>
   <div className={styles.desc}>
     <div className={styles.text}>
-      <img src="/images/icons/message.png" alt="message" />
+      <img src={messageIcon1} alt="message" />
       <p>{message1}</p>
     </div>
     <div className={styles.text}>
-    <img src="/images/icons/wifi.png" alt="wifi" />
+    <img src={messageIcon2} alt="wifi" />
     <p>{message2}</p>
     </div>
     {message4 ? 
     <div className={styles.text}>
-    <img src="/images/icons/education.png" alt="education" />
+    <img src={messageIcon4} alt="education" />
     <p>{message4}</p>
     </div>
     :""}
     <div className={styles.text}>
-    <img src="/images/icons/bag.png" alt="bag" />
+    <img src={messageIcon1} alt="bag" />
     <p>{message3}</p>
     </div>
   </div>

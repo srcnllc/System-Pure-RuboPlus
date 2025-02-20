@@ -2,7 +2,6 @@
 .programinfocard{
  display: flex;
  flex-direction: column;
- border: 1px solid red;
  width: size(500);
  background-color: var(--white);
  border-radius: size(24);
@@ -20,6 +19,9 @@
     ); 
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  @media #{max-width()} {
+    width: 100%;
+}
  .title{
     padding: size(32);
     min-height: size(228);
@@ -31,6 +33,7 @@
         font-weight: 700;
         line-height: size(59.42);
         color: var(--dark);
+ 
         span{
             font-weight: 700;
             color: var(--pink);
@@ -70,6 +73,9 @@
             font-weight: 600;
             line-height: size(32);
             color: var(--black);
+            @media #{max-width()} {
+                text-align: left;
+            }
         }
     }
  }

@@ -3,17 +3,28 @@
     display: flex;
     gap: size(7.94);
     margin-bottom: size(86);
+    @media #{max-width()} {
+        flex-direction: column;
+        margin-bottom: size(43);
+    }
     .leftBanner{
         display: flex;
         flex-direction: column;
         gap: size(7.94);
         width: 50%;
         overflow: hidden;
+        @media #{max-width()} {
+            width: 100%;
+        }
         .topImages{
             display: flex;
             gap: size(7.94);
+            @media #{max-width()} {
+                flex-direction: column;
+            }
             img{
                 width: 100%;
+       
             }
         }
         .bottomImages{
@@ -28,10 +39,18 @@
         width: 50%;
         gap: size(7.94);
         overflow: hidden;
+        @media #{max-width()} {
+            width:100%;
+            flex-direction: column;
+        }
         .OneImages{
             width: size(100%);
             img{
                 height: 100%;
+                @media #{max-width()} {
+                    width:100%;
+                    
+                }
             }
         }
         .TwoImages{
