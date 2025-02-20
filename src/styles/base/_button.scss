@@ -33,6 +33,20 @@
         background-color: var(--dark);
       }
     }
+    &.pinkNeonButton {
+      background-color: var(--pinkNeonButton);
+      color: var(--white);
+      &::after {
+        background-color: var(--dark);
+      }
+    }
+    &.greenButton {
+      background-color: var(--green1);
+      color: var(--white);
+      &::after {
+        background-color: var(--dark);
+      }
+    }
     &::after {
       content: '';
       position: absolute;

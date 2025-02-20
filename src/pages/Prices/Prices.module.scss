@@ -1,1 +1,9 @@
 @import '../../styles/base/func';
+.pricesPage{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    .pricesContent{
+        max-width: size(1060);
+    }
+}

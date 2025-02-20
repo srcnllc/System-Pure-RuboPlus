@@ -1,0 +1,20 @@
+@import '../../../../styles/base/func';
+.heroprices{
+    padding-block: size(99);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: size(43);
+    h2{
+        font-size: size(48);
+        font-weight: 700;
+        line-height: size(59.42);
+        color: var(--dark);
+    }
+    .content{
+        display: flex;
+        gap: size(17);
+
+    }
+}

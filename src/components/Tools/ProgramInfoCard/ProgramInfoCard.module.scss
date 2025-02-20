@@ -1,0 +1,122 @@
+@import '../../../styles/base/func';
+.programinfocard{
+ display: flex;
+ flex-direction: column;
+ border: 1px solid red;
+ width: size(500);
+ background-color: var(--white);
+ border-radius: size(24);
+ position: relative;
+ z-index: 0;
+ border: 3px solid transparent;
+  background-image: 
+    linear-gradient(white, white), // İç kısım tamamen beyaz olacak
+    linear-gradient(45deg, 
+      #7DC6B5 0%, 
+      #223FA6 49.25%, 
+      #D881E5, 
+      #7DC6B5,
+      #FDD29B 100%
+    ); 
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+ .title{
+    padding: size(32);
+    min-height: size(228);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+        font-size: size(48);
+        font-weight: 700;
+        line-height: size(59.42);
+        color: var(--dark);
+        span{
+            font-weight: 700;
+            color: var(--pink);
+        }
+    }
+    h6{
+        font-size: size(25);
+        font-weight: 600;
+        line-height: size(30);
+        color: var(--black);
+    }
+
+ }
+ .desc{
+    background-color:var(--gary);
+    min-height: size(271);
+    padding: size(32) size(58) size(32) size(32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: size(16);
+    .text{
+        display: flex;
+        gap: size(10);
+        max-width: size(364);
+        img{
+            width: 28px;
+            height:28px;
+            color:blue;
+            svg{
+                color: #223FA6;
+            }
+        }
+
+        p{
+            font-size: size(18);
+            font-weight: 600;
+            line-height: size(32);
+            color: var(--black);
+        }
+    }
+ }
+ .price{
+    padding-block: size(53);
+    padding-inline: size(32);
+    display: flex;
+    flex-direction: column;
+    gap: size(30);
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-size: size(38);
+        font-weight: 800;
+        line-height: size(32);
+        color: var(--black);
+        display: flex;
+        gap: size(10);
+        span{
+            font-size: size(26);
+            line-height: size(32);
+            font-weight: 500;
+            color: var(--contactText);
+            &.notJob{
+                color: var(--pink);
+                font-size: size(38);
+                font-weight: 800;
+                line-height: size(32);
+            }
+        }
+    }
+    p{
+        font-size: size(21);
+        font-weight: 500;
+        line-height: size(30);
+        color: var(--black);
+    }
+    button{
+        padding-inline: size(49.5);
+    }
+    .description{
+        p{
+            font-size: size(14);
+            font-weight: 600;
+            line-height: size(21);
+            color: var(--contactText);
+        }
+    }
+ }
+}
