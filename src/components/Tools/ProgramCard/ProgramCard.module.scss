@@ -6,6 +6,10 @@
     padding: size(0) size(60) size(44) size(60);
     display: flex;
     align-items: flex-end;
+    @media #{max-width()} {
+        width: 100%;
+        padding: size(0) size(30) size(30) size(30);
+    }
     .content{
         display: flex;
         flex-direction: column;
@@ -41,6 +45,12 @@
         z-index: -1;
         top: 0;
         left: 0;
+        @media #{max-width()} {
+            height:100%;
+           img{
+            height: 100%;
+           }
+         }
     }
  
 }

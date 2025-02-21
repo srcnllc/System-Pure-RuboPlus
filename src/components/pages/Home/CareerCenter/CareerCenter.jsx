@@ -1,10 +1,8 @@
-import Container from '../../../Tools/Container/Container';
 import styles from './CareerCenter.module.scss';
 
 export default function CareerCenter() {
   return (
 <section className={styles.careercenter}>
-  <Container large>
     <div className={styles.content}>
   <div className={styles.top}>
     <div className={styles.info}>
@@ -51,7 +49,6 @@ export default function CareerCenter() {
   </div>
   </div>
       </div>  
-  </Container>
 </section>
 )
 }

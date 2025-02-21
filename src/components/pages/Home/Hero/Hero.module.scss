@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media #{max-width()} {
+    min-height: auto;
+    margin-bottom: size(100);
+ }
   .content{
     position: relative;
     height: auto;
@@ -14,12 +18,20 @@
     display: flex;
     flex-direction: column;
     gap: size(106);
+    @media #{max-width()} {
+      gap: size(30);
+      top: size(180);
+    }
+
     .textConten{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: size(28);
+      @media #{max-width()} {
+        justify-content: flex-end;
+     }
       h2{
         display: flex;
         flex-direction: column;
@@ -27,6 +39,11 @@
         font-size: size(74);
         font-weight: 800;
         line-height: size(74.2);
+        @media #{max-width()} {
+          font-size: size(42);
+          font-weight: 800;
+          line-height: size(48);
+       }
         span{
           color: var(--pink);
         }
@@ -41,6 +58,9 @@
     .sectionPc{
       position: relative;
       height: size(820);
+      @media #{max-width()} {
+        height: size(350);
+      }
       img{
         width: 100%;
         height: 100%;
@@ -55,6 +75,9 @@
     img{
       width: auto;
       height: size(1098);
+      @media #{max-width()} {
+        height: 100vh
+     }
     }
   }
 
