@@ -12,5 +12,8 @@
   .container {
     max-width: 90%;
     margin-inline: auto;
+    &.mobileContainer{
+      max-width: 100% !important;
+    }
   }
 }
